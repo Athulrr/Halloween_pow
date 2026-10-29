@@ -1,0 +1,326 @@
+.selected-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  max-height: 640px;
+  border-color: rgba(168, 85, 247, 0.25);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(168, 85, 247, 0.12);
+}
+
+.selected-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+  padding-bottom: 1rem;
+}
+
+.selected-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.selected-icon {
+  font-size: 1.85rem;
+  filter: drop-shadow(0 0 6px rgba(168, 85, 247, 0.6));
+}
+
+.selected-header h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.3px;
+}
+
+.sub-caption-purple {
+  font-size: 0.75rem;
+  color: #c084fc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.selected-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crypt-badge {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.clear-crypt-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.clear-crypt-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.selected-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.4rem;
+}
+
+/* Custom Scrollbar */
+.selected-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.selected-list::-webkit-scrollbar-track {
+  background: rgba(8, 4, 18, 0.6);
+  border-radius: 4px;
+}
+
+.selected-list::-webkit-scrollbar-thumb {
+  background: #6b21a8;
+  border-radius: 4px;
+}
+
+.selected-list::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  animation: ghostFloat 4s ease-in-out infinite;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.5));
+}
+
+.empty-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  margin: 0 0 0.25rem 0;
+}
+
+.empty-sub {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.selected-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.crypt-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(14, 8, 26, 0.75);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.85rem 1rem;
+  animation: slideInRight 0.3s ease-out forwards;
+  transition: all 0.2s ease;
+}
+
+.crypt-item:hover {
+  background: rgba(24, 13, 44, 0.85);
+  border-color: rgba(168, 85, 247, 0.35);
+  transform: translateX(3px);
+}
+
+.item-main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.name-index {
+  font-size: 0.825rem;
+  color: #ff944d;
+  font-weight: 800;
+  min-width: 1.75rem;
+}
+
+.player-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.name-text {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #f8fafc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-dare-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(0, 255, 136, 0.12);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  max-width: fit-content;
+}
+
+.player-dare-tag:hover {
+  background: rgba(0, 255, 136, 0.22);
+  border-color: #00ff88;
+  transform: scale(1.02);
+}
+
+.dare-emoji {
+  font-size: 0.95rem;
+}
+
+.dare-title {
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: #00ff88;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.assign-dare-btn {
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px dashed rgba(168, 85, 247, 0.4);
+  color: #c084fc;
+  font-size: 0.725rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.assign-dare-btn:hover {
+  background: rgba(168, 85, 247, 0.3);
+  color: #ffffff;
+}
+
+.player-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.remove-player-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.remove-player-btn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.15);
+}
+
+/* Dare description dropdown */
+.dare-description-box {
+  display: none;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  font-size: 0.825rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+}
+
+.dare-description-box.open {
+  display: block;
+  animation: slideInRight 0.25s ease-out;
+}
+
+.dare-description-box p {
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+  color: #e2e8f0;
+}
+
+.reroll-mini-btn {
+  background: rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #d8b4fe;
+  font-size: 0.725rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.reroll-mini-btn:hover {
+  background: rgba(168, 85, 247, 0.4);
+  color: #ffffff;
+}
